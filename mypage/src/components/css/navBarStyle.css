@@ -1,0 +1,17 @@
+body {
+  background-color: #C1CDC1;
+}
+
+.navBarStyle {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  margin: 0px auto;
+  background-color: blue;
+  margin-top: 100px;
+}
+.navBarStyle p {
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+}/*# sourceMappingURL=navBarStyle.css.map */

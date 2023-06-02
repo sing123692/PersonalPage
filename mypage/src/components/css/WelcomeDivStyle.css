@@ -1,0 +1,9 @@
+.WhiteDiv {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+  height: 800px;
+  margin: 0px auto;
+  margin-top: 50px;
+}/*# sourceMappingURL=WelcomeDivStyle.css.map */

@@ -1,0 +1,28 @@
+.ProfileCardDiv {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 550px;
+  margin: 0px auto;
+  margin-top: 300px;
+}
+.ProfileCardDiv .Profile {
+  display: flex;
+  flex-direction: row;
+}
+.ProfileCardDiv .Profile .avatar {
+  background-color: lightblue;
+  width: 200px;
+  height: 200px;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  margin: 30px;
+}
+.ProfileCardDiv .Profile .text {
+  margin: 30px;
+  line-height: 1;
+}
+.ProfileCardDiv .Profile .text h1 {
+  font-size: 3rem;
+}/*# sourceMappingURL=ProfileCardDivStyle.css.map */

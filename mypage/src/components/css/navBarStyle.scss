@@ -1,0 +1,22 @@
+$lightGreen : #C1CDC1;
+
+body {
+    background-color: $lightGreen;
+}
+
+.navBarStyle {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    margin: 0px auto;
+    background-color: blue;
+    margin-top: 100px;
+
+    p {
+        display: flex;
+        align-items: center;
+
+        padding-left: 100px;
+        // margin-left: 20px;
+    }
+}

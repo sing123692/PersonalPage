@@ -1,0 +1,34 @@
+.ProfileCardDiv {
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 550px;
+    margin: 0px auto;
+    margin-top: 300px;
+
+    .Profile {
+        display: flex;
+        flex-direction: row;
+
+        .avatar {
+            background-color: lightblue;
+            width: 200px;
+            height: 200px;
+            clip-path: circle(50% at 50% 50%);
+            margin: 30px;
+        }
+
+        .text {
+            margin: 30px;
+            line-height: 1;
+
+            h1 {
+                font-size: 3rem;
+            }
+
+        }
+    }
+
+}
