@@ -6,4 +6,12 @@
     height: 600px;
     margin: 0px auto;
     margin-top: 50px;
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+
+    h1 {
+        font-size: 72px;
+    }
 }

@@ -1,9 +1,17 @@
+@charset "UTF-8";
 .WhiteDiv {
   background-color: white;
   display: flex;
   flex-direction: row;
-  width: 700px;
-  height: 800px;
+  width: 500px;
+  height: 600px;
   margin: 0px auto;
   margin-top: 50px;
+  justify-content: center;
+  /* 水平居中 */
+  align-items: center;
+  /* 垂直居中 */
+}
+.WhiteDiv h1 {
+  font-size: 72px;
 }/*# sourceMappingURL=WelcomeDivStyle.css.map */

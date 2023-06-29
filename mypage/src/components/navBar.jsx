@@ -5,9 +5,9 @@ const NavBar = () => {
     return (
         <div>
             <nav className='navBarStyle'>
-                <p>123</p>
-                <p>456</p>
-                <p>789</p>
+                <p>HOME</p>
+                <p>PROFILE</p>
+                <p>DESIGN</p>
             </nav>
         </div>
     );

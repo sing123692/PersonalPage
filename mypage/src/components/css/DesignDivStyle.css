@@ -1,0 +1,9 @@
+.DesignDiv {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 800px;
+  margin: 0px auto;
+  margin-top: 300px;
+}/*# sourceMappingURL=DesignDivStyle.css.map */

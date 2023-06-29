@@ -7,11 +7,21 @@ body {
   flex-direction: row;
   width: 500px;
   margin: 0px auto;
-  background-color: blue;
   margin-top: 100px;
 }
 .navBarStyle p {
+  margin: 0px auto;
   display: flex;
   align-items: center;
-  padding-left: 100px;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  transition: 1s;
+  border-radius: 20px;
+  border: #C1CDC1 5px solid;
+}
+.navBarStyle p:hover {
+  transition: 1s;
+  background-color: #71876C;
+  border: #71876C 5px solid;
 }/*# sourceMappingURL=navBarStyle.css.map */

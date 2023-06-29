@@ -1,5 +1,3 @@
-$lightGreen : #C1CDC1;
-
 body {
     background-color: $lightGreen;
 }
@@ -8,15 +6,29 @@ body {
     display: flex;
     flex-direction: row;
     width: 500px;
+
     margin: 0px auto;
-    background-color: blue;
+
     margin-top: 100px;
 
     p {
+        margin: 0px auto;
         display: flex;
         align-items: center;
+        color: white;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        transition: 1s;
+        border-radius: 20px;
+        border: $lightGreen 5px solid;
 
-        padding-left: 100px;
-        // margin-left: 20px;
+
+
+        &:hover {
+            transition: 1s;
+            background-color: $Green;
+            border: $Green 5px solid;
+
+        }
     }
 }

@@ -1,28 +1,39 @@
+.BackShape {
+  display: flex;
+  flex-direction: row;
+}
+
 .ProfileCardDiv {
   background-color: white;
   display: flex;
   flex-direction: column;
-  width: 800px;
-  height: 550px;
-  margin: 0px auto;
+  width: 1500px;
+  height: 900px;
+  float: left;
   margin-top: 300px;
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
 }
 .ProfileCardDiv .Profile {
   display: flex;
   flex-direction: row;
+  margin: 50px;
 }
 .ProfileCardDiv .Profile .avatar {
   background-color: lightblue;
-  width: 200px;
-  height: 200px;
+  width: 358px;
+  height: 358px;
   -webkit-clip-path: circle(50% at 50% 50%);
           clip-path: circle(50% at 50% 50%);
-  margin: 30px;
 }
 .ProfileCardDiv .Profile .text {
   margin: 30px;
   line-height: 1;
 }
 .ProfileCardDiv .Profile .text h1 {
-  font-size: 3rem;
+  font-size: 5rem;
+}
+.ProfileCardDiv .AboutMe {
+  margin: 0 auto;
+  font-size: 2rem;
 }/*# sourceMappingURL=ProfileCardDivStyle.css.map */

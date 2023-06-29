@@ -1,0 +1,50 @@
+.SkillDiv {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 300px;
+    clear: both;
+
+    .MySkill {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+
+        width: 1200px;
+        height: 600px;
+
+
+        margin-top: 150px;
+        border-top-left-radius: 500px;
+        border-bottom-left-radius: 500px;
+    }
+
+    .ColorTitle {
+        background-color: var(--Green);
+        width: 400px;
+        height: 100px;
+        position: relative;
+        right: 50px;
+        top: 50px;
+        text-align: center;
+
+
+        h1 {
+            font-weight: bolder;
+        }
+    }
+
+    .Text {
+        margin-top: 50px;
+        margin-left: 100px;
+
+
+        p {
+            font-size: 24px;
+            font-weight: bolder;
+        }
+    }
+
+
+
+}

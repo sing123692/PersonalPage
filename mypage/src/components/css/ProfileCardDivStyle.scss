@@ -1,23 +1,37 @@
+.BackShape {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+
 .ProfileCardDiv {
     background-color: white;
-
     display: flex;
     flex-direction: column;
-    width: 800px;
-    height: 550px;
-    margin: 0px auto;
+    width: 1500px;
+    height: 900px;
+
+    float: left;
     margin-top: 300px;
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
+
+
 
     .Profile {
         display: flex;
         flex-direction: row;
+        margin: 50px;
+
 
         .avatar {
             background-color: lightblue;
-            width: 200px;
-            height: 200px;
+            width: 358px;
+            height: 358px;
             clip-path: circle(50% at 50% 50%);
-            margin: 30px;
+
         }
 
         .text {
@@ -25,10 +39,19 @@
             line-height: 1;
 
             h1 {
-                font-size: 3rem;
+                font-size: 5rem;
             }
 
         }
+
+
+    }
+
+
+
+    .AboutMe {
+        margin: 0 auto;
+        font-size: 2rem;
     }
 
 }

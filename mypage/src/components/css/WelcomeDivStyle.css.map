@@ -1,1 +1,1 @@
-{"version":3,"sources":["WelcomeDivStyle.scss","WelcomeDivStyle.css"],"names":[],"mappings":"AAAA;EACI,uBAAA;EACA,aAAA;EACA,mBAAA;EACA,YAAA;EACA,aAAA;EACA,gBAAA;EACA,gBAAA;ACCJ","file":"WelcomeDivStyle.css"}
+{"version":3,"sources":["WelcomeDivStyle.css","WelcomeDivStyle.scss"],"names":[],"mappings":"AAAA,gBAAgB;ACAhB;EACI,uBAAA;EACA,aAAA;EACA,mBAAA;EACA,YAAA;EACA,aAAA;EACA,gBAAA;EACA,gBAAA;EACA,uBAAA;EACA,SAAA;EACA,mBAAA;EACA,SAAA;ADEJ;ACAI;EACI,eAAA;ADER","file":"WelcomeDivStyle.css"}

@@ -5,7 +5,12 @@ const WelcomeDiv = () => {
 
     return (
         <div className='WhiteDiv'>
-            welcome
+            <h1>
+                Welcome<br />
+                To<br />
+                My<br />
+                Page<br />
+            </h1>
         </div>
     );
 
