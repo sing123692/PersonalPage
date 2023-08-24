@@ -1,5 +1,5 @@
 body {
-  background-color: #C1CDC1;
+  background-color: var(--lightGreen);
 }
 
 .navBarStyle {
@@ -9,7 +9,13 @@ body {
   margin: 0px auto;
   margin-top: 100px;
 }
-.navBarStyle p {
+
+@media screen and (max-width: 500px) {
+  .navBarStyle {
+    width: 300px;
+  }
+}
+.navBarText {
   margin: 0px auto;
   display: flex;
   align-items: center;
@@ -18,10 +24,9 @@ body {
   font-size: 1.5rem;
   transition: 1s;
   border-radius: 20px;
-  border: #C1CDC1 5px solid;
+  text-decoration: none;
 }
-.navBarStyle p:hover {
-  transition: 1s;
-  background-color: #71876C;
-  border: #71876C 5px solid;
+.navBarText:hover {
+  transition: 0.5s;
+  background-color: rgb(107, 172, 147);
 }/*# sourceMappingURL=navBarStyle.css.map */

@@ -10,11 +10,11 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    width: 1500px;
-    height: 900px;
+    width: 1200px;
+    height: 500px;
 
     float: left;
-    margin-top: 300px;
+    margin-top: 100px;
     border-top-right-radius: 500px;
     border-bottom-right-radius: 500px;
 
@@ -23,14 +23,20 @@
     .Profile {
         display: flex;
         flex-direction: row;
+        align-items: flex-start;
         margin: 50px;
+        width: 100%;
 
 
         .avatar {
-            background-color: lightblue;
-            width: 358px;
-            height: 358px;
-            clip-path: circle(50% at 50% 50%);
+            width: 400px;
+
+            img {
+                background-color: lightblue;
+                clip-path: circle(50% at 50% 50%);
+                width: 358px;
+                height: 358px;
+            }
 
         }
 
@@ -39,7 +45,7 @@
             line-height: 1;
 
             h1 {
-                font-size: 5rem;
+                font-size: 4rem;
             }
 
         }
@@ -50,8 +56,32 @@
 
 
     .AboutMe {
-        margin: 0 auto;
-        font-size: 2rem;
+        display: flex;
+
+        justify-content: center;
+        /* 水平居中 */
+        align-items: center;
+        /* 垂直居中 */
+        font-size: 1.5rem;
+        margin-top: 150px;
+        margin-left: 50px;
+    }
+
+    .buttonDiv {
+        display: flex;
+        justify-content: right;
+        width: 1000px;
+        margin-top: 100px;
+        margin-left: 50px;
+
+        position: fixed;
+
+        .aboutButtonStyle {
+
+            width: 50px;
+            height: 50px;
+
+        }
     }
 
 }

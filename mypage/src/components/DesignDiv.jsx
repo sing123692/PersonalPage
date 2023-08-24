@@ -7,7 +7,15 @@ const DesignDiv = () => {
 
     return (
         <div className='DesignDiv'>
-            123
+            <div>
+                UI/UX Design
+            </div>
+            <div>
+                MyPageDesign
+            </div>
+            <div>
+
+            </div>
         </div>
     );
 
