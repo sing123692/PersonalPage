@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: row;
 
+    margin: 50px 300px; //上下 / 左右
+
+
 }
 
 
@@ -10,32 +13,37 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    width: 1200px;
-    height: 500px;
+    width: 400px;
+    height: 600px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transform: rotate(-5deg);
 
-    float: left;
-    margin-top: 100px;
-    border-top-right-radius: 500px;
-    border-bottom-right-radius: 500px;
+
+
 
 
 
     .Profile {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: flex-start;
-        margin: 50px;
+        // justify-content: center;
+        align-items: center;
         width: 100%;
 
 
         .avatar {
             width: 400px;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
 
             img {
                 background-color: lightblue;
                 clip-path: circle(50% at 50% 50%);
-                width: 358px;
-                height: 358px;
+                width: 300px;
+                height: 300px;
+
             }
 
         }
@@ -55,17 +63,7 @@
 
 
 
-    .AboutMe {
-        display: flex;
 
-        justify-content: center;
-        /* 水平居中 */
-        align-items: center;
-        /* 垂直居中 */
-        font-size: 1.5rem;
-        margin-top: 150px;
-        margin-left: 50px;
-    }
 
     .buttonDiv {
         display: flex;
@@ -74,7 +72,7 @@
         margin-top: 100px;
         margin-left: 50px;
 
-        position: fixed;
+        position: absolute;
 
         .aboutButtonStyle {
 
@@ -83,5 +81,22 @@
 
         }
     }
+
+}
+
+.AboutMe {
+    width: 800px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.SkillDiv {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 100px 20px;
+    margin-top: 50px;
+    margin-left: 100px;
+
 
 }

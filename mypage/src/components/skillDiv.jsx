@@ -1,12 +1,13 @@
 import React from 'react';
-import "./css/SkillDivStyle.css";
+import { motion } from 'framer-motion';
+
 import "./css/Style.css";
 
 const SkillDiv = () => {
 
     return (
 
-        <div className='clearBoth'>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='clearBoth'>
 
             <div className='SkillDiv '>
                 <div className='MySkill'>
@@ -37,7 +38,7 @@ const SkillDiv = () => {
 
 
 
-        </div>
+        </motion.div>
 
 
     );

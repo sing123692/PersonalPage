@@ -6,10 +6,11 @@ body {
     display: flex;
     flex-direction: row;
     width: 500px;
-
     margin: 0px auto;
-
     margin-top: 100px;
+    border-radius: 20px;
+
+
 
 
 }
@@ -25,20 +26,20 @@ body {
     margin: 0px auto;
     display: flex;
     align-items: center;
-    color: white;
+    color: rgba(255, 255, 255, 0.781);
     font-weight: bolder;
-    font-size: 1.5rem;
+    font-size: 2rem;
     transition: 1s;
-    border-radius: 20px;
     text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 
 
 
 
 
     &:hover {
-        transition: 0.5s;
-        background-color: rgb(107, 172, 147);
+        transition: 0.3s;
+        color: white;
 
 
     }

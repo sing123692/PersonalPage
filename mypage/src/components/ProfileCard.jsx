@@ -1,58 +1,76 @@
 import React, { useState } from 'react';
 import "./css/ProfileCardDivStyle.css";
+import { motion } from 'framer-motion';
 
 const ProfileCard = () => {
 
-    const [ShowAboutMe, setShowAboutMe] = useState(false);
-    const [ShowText, setShowText] = useState(true);
+    const [ShowAboutMe, setShowAboutMe] = useState(true);
+    const [ShowSkill, setShowSkill] = useState(false);
+
 
 
     const toggleAboutMe = () => {
         setShowAboutMe(!ShowAboutMe);
-        setShowText(!ShowText);
+        setShowSkill(!ShowSkill);
+
     };
 
     return (
-        <div className='BackShape'>
-            <div className='ProfileCardDiv'>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+            <div className='BackShape'>
+                <div className='ProfileCardDiv'>
 
-                <div className='Profile'>
+                    <div className='Profile'>
 
 
 
-                    {ShowText && (
                         <div className='avatar'>
                             <img src="" alt="" />
                         </div>
-                    )}
-                    {ShowText && (
+
+
                         <div className='text'>
                             <h1>OOO</h1>
                             <h2>畢業於OOOXXX</h2>
                         </div>
-                    )}
-                    {ShowAboutMe && (
-                        <div className='AboutMe'>
-                            ProfileCardDivProfileCardDivProfileCardDivProfileCardDiv
-                            ProfileCardDivProfileCardDivProfileCardDivProfileCardDiv
-
-                        </div>
-                    )}
 
 
 
 
-                    <div className='buttonDiv'>
-                        <button className="aboutButtonStyle" onClick={toggleAboutMe}>
-                            切換 About Me
-                        </button>
+
+
                     </div>
+
+                </div>
+
+
+                {ShowAboutMe && (
+                    < div className='AboutMe'>
+                        <h1>introduction</h1>
+                        <p>ProfileCardDivProfileCardDivProfileCardDivProfileCardDiv
+                            ProfileCardDivProfileCardDivProfileCardDivProfileCardDiv
+                        </p>
+                    </div>
+                )}
+
+                {ShowSkill && (
+                    <div className='SkillDiv'>
+                        <h1>tool</h1>
+                        <p>myskill</p>
+                        <h1>tool</h1>
+                        <p>myskill</p>
+                    </div>
+                )}
+
+
+                <div className='buttonDiv'>
+                    <button onClick={toggleAboutMe}>ClickMe</button>
                 </div>
 
             </div>
-            <div className='WhiteCircle'></div>
 
-        </div>
+        </motion.div >
+
 
     );
 

@@ -20,7 +20,7 @@ function App() {
         {/* path="/*" 意思是預設會顯示 */}
         <Routes>
           <Route path='/*' element={<WelcomeDiv />} />
-          <Route path="/profile" element={<React.Fragment><ProfileCard /><SkillDiv /></React.Fragment>} />
+          <Route path="/profile" element={<React.Fragment><ProfileCard /></React.Fragment>} />
           <Route path="/design" element={<DesignDiv />} />
 
 

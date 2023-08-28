@@ -1,11 +1,161 @@
 .DesignDiv {
     background-color: lightblue;
-    display: flex;
-    flex-direction: column;
-    width: 1500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); //一排3個
+    gap: 20px; //一排物件的間距
+    max-width: 1500px;
     height: 800px;
     margin: 0px auto;
     margin-top: 50px;
     margin-bottom: 50px;
 
+
+
+
+
+}
+
+.DesignStyle {
+    transition: 0.5s;
+    will-change: transform;
+
+
+    &:hover {
+        transition: 0.5s;
+
+        transform: rotate(-2deg) translateZ(0); //角度傾斜後使圖片不會有鋸齒狀translateZ(0)
+
+    }
+
+    background-color: white;
+    width: 350px;
+    height: 500px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    .buttonStyle {
+        position: absolute;
+        margin-left: 400px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        button {
+            width: 100px;
+            height: 50px;
+            border: none;
+
+            &:active {
+                background-color: gray;
+            }
+
+        }
+
+        p {
+            width: 100px;
+            height: 50px;
+            background-color: white;
+
+            &:active {
+                background-color: gray;
+            }
+        }
+    }
+
+    .DesignImg {
+        background-color: lightpink;
+        width: 300px;
+        height: 350px;
+        margin: 20px auto;
+        display: flex;
+        /* 使用 flex 布局 */
+        align-items: center;
+        /* 垂直居中 */
+        justify-content: center;
+        /* 水平居中 */
+
+
+        /* 隐藏溢出部分 */
+        .Contentimg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top; //cover但顯示上半部分
+
+        }
+    }
+
+    .Text {
+        margin-top: -30px;
+    }
+
+}
+
+.mycontainer {
+    //使p標籤文字置中用
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DesignDetailOverlay {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+
+    .DesignDetail {
+        background: repeating-linear-gradient(90deg, #9fd9e1 0, #9fd9e1 5%, transparent 0, transparent 50%), repeating-linear-gradient(180deg, #9fd9e1 0, #9fd9e1 5%, transparent 0, transparent 50%);
+        background-size: 4em 4em;
+        background-color: #ffffff;
+        opacity: 1;
+        //CSS pattern 背景
+
+        width: 1200px;
+        height: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); //置中
+
+        .Img01 {
+            width: 500px;
+            height: 95%;
+            margin: 20px 30px;
+            overflow-y: scroll;
+            /* 只顯示垂直滾動條 */
+            overflow-x: hidden;
+            /* 隱藏水平滾動條 */
+
+
+            /* WebKit 瀏覽器滾動條樣式 */
+            &::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: rgb(91, 163, 168);
+                border-radius: 5px;
+            }
+
+            &::-webkit-scrollbar-thumb:hover {
+                background-color: rgb(78, 143, 148);
+            }
+
+
+            img {
+                width: 100%;
+
+
+            }
+        }
+    }
 }
