@@ -49,11 +49,11 @@
         }
 
         .text {
-            margin: 30px;
+            margin: 10px;
             line-height: 1;
 
             h1 {
-                font-size: 4rem;
+                font-size: 3rem;
             }
 
         }
@@ -65,22 +65,7 @@
 
 
 
-    .buttonDiv {
-        display: flex;
-        justify-content: right;
-        width: 1000px;
-        margin-top: 100px;
-        margin-left: 50px;
 
-        position: absolute;
-
-        .aboutButtonStyle {
-
-            width: 50px;
-            height: 50px;
-
-        }
-    }
 
 }
 
@@ -88,6 +73,48 @@
     width: 800px;
     margin-top: 50px;
     margin-left: 100px;
+    line-height: 2;
+    font-weight: bolder;
+    font-size: 16px;
+
+    h1 {
+        background-color: rgb(210, 233, 227);
+        width: 800px;
+        height: 50px;
+        margin-left: -200px; //背景那條藍色
+        padding-left: 120px; //文字和背景的差距 想把字移出來使用的
+        justify-content: center;
+    }
+}
+
+.buttonDiv {
+    display: flex;
+    justify-content: right;
+    width: 1200px;
+    margin-top: 550px;
+    margin-left: 50px;
+    position: absolute;
+
+    button {
+        border-radius: 50%;
+        border: none;
+        width: 80px;
+        height: 80px;
+        background-color: white;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+
+        &:hover {
+            background-color: rgb(162, 182, 162);
+
+        }
+
+        &:active {
+            margin-top: 5px;
+            background-color: rgb(119, 156, 119);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0);
+        }
+    }
 }
 
 .SkillDiv {
@@ -97,6 +124,16 @@
     margin: 100px 20px;
     margin-top: 50px;
     margin-left: 100px;
+    font-weight: bolder;
+    font-size: 20px;
+
+    h1 {
+        background-color: rgb(210, 233, 227);
+        width: 800px;
+        height: 50px;
+        margin-left: -200px; //背景那條藍色
+        padding-left: 120px; //文字和背景的差距 想把字移出來使用的
+    }
 
 
 }

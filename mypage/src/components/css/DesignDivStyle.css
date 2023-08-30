@@ -1,6 +1,5 @@
 @charset "UTF-8";
 .DesignDiv {
-  background-color: lightblue;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -102,6 +101,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
 }
 .DesignDetailOverlay .DesignDetail .Img01 {
   width: 500px;
@@ -125,4 +125,31 @@
 }
 .DesignDetailOverlay .DesignDetail .Img01 img {
   width: 100%;
+}
+.DesignDetailOverlay .DesignDetail .DetailText {
+  background-color: rgb(249, 255, 254);
+  width: 500px;
+  height: 500px;
+  margin: 80px 50px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.DesignDetailOverlay .DesignDetail .DetailText .Tape {
+  position: absolute;
+  background-color: rgb(188, 188, 221);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-top: -20px;
+  margin-left: 180px;
+  width: 150px;
+  height: 50px;
+  transform: rotate(-5deg);
+}
+.DesignDetailOverlay .DesignDetail .DetailText .Text {
+  margin: 50px;
+}
+.DesignDetailOverlay .DesignDetail .DetailNextButton {
+  margin-top: 400px;
+}
+.DesignDetailOverlay .DesignDetail .DetailNextButton button {
+  width: 50px;
+  height: 50px;
 }/*# sourceMappingURL=DesignDivStyle.css.map */

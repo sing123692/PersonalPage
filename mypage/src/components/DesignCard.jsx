@@ -4,19 +4,33 @@ import "./css/DesignDivStyle.css";
 
 const DesignCard = (props) => {
 
+    const typeArray = Object.values(props.type);
+    console.log(props.type);
+    // // 检查 props.type 是否存在
+    // if (!props.type || typeof props.type !== 'object') {
+    //     return null; 
+    // }
+    //type沒有東西的話會爆要用這個
+
     return (
         <div>
             <div className='DesignStyle' onClick={props.onClick}>
                 <div className='buttonStyle'>
-                    <p className='mycontainer'>{props.type}</p>
-                    <button onClick={(event) => event.stopPropagation()} >Download</button>
+                    {typeArray.map((typeItem, index) => (
+                        <p className='mycontainer' key={index}>
+                            {typeItem}
+                        </p>
+                    ))
+
+                    }
+
 
                 </div>
 
                 <div className='DesignImg' >
                     {props.image && (
 
-                        <img className='Contentimg' src={require(`../images/${props.image}`)} alt={props.title} />
+                        <img className='Contentimg' src={require(`../images/${props.image.default}`)} alt={props.title} />
 
                     )}
 

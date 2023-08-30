@@ -34,29 +34,53 @@
   height: 300px;
 }
 .ProfileCardDiv .Profile .text {
-  margin: 30px;
+  margin: 10px;
   line-height: 1;
 }
 .ProfileCardDiv .Profile .text h1 {
-  font-size: 4rem;
-}
-.ProfileCardDiv .buttonDiv {
-  display: flex;
-  justify-content: right;
-  width: 1000px;
-  margin-top: 100px;
-  margin-left: 50px;
-  position: absolute;
-}
-.ProfileCardDiv .buttonDiv .aboutButtonStyle {
-  width: 50px;
-  height: 50px;
+  font-size: 3rem;
 }
 
 .AboutMe {
   width: 800px;
   margin-top: 50px;
   margin-left: 100px;
+  line-height: 2;
+  font-weight: bolder;
+  font-size: 16px;
+}
+.AboutMe h1 {
+  background-color: rgb(210, 233, 227);
+  width: 800px;
+  height: 50px;
+  margin-left: -200px;
+  padding-left: 120px;
+  justify-content: center;
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: right;
+  width: 1200px;
+  margin-top: 550px;
+  margin-left: 50px;
+  position: absolute;
+}
+.buttonDiv button {
+  border-radius: 50%;
+  border: none;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.buttonDiv button:hover {
+  background-color: rgb(162, 182, 162);
+}
+.buttonDiv button:active {
+  margin-top: 5px;
+  background-color: rgb(119, 156, 119);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0);
 }
 
 .SkillDiv {
@@ -66,4 +90,13 @@
   margin: 100px 20px;
   margin-top: 50px;
   margin-left: 100px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.SkillDiv h1 {
+  background-color: rgb(210, 233, 227);
+  width: 800px;
+  height: 50px;
+  margin-left: -200px;
+  padding-left: 120px;
 }/*# sourceMappingURL=ProfileCardDivStyle.css.map */

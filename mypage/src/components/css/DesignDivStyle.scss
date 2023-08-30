@@ -1,5 +1,4 @@
 .DesignDiv {
-    background-color: lightblue;
     display: grid;
     grid-template-columns: repeat(3, 1fr); //一排3個
     gap: 20px; //一排物件的間距
@@ -17,8 +16,6 @@
 
 .DesignStyle {
     transition: 0.5s;
-    will-change: transform;
-
 
     &:hover {
         transition: 0.5s;
@@ -90,7 +87,7 @@
     }
 
     .Text {
-        margin-top: -30px;
+        margin: -30px 20px;
     }
 
 }
@@ -125,6 +122,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); //置中
+        display: flex;
 
         .Img01 {
             width: 500px;
@@ -133,6 +131,7 @@
             overflow-y: scroll;
             /* 只顯示垂直滾動條 */
             overflow-x: hidden;
+
             /* 隱藏水平滾動條 */
 
 
@@ -154,7 +153,43 @@
             img {
                 width: 100%;
 
+            }
+        }
 
+        .DetailText {
+            background-color: rgb(249, 255, 254);
+            width: 500px;
+            height: 500px;
+            margin: 80px 50px;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+
+
+            .Tape {
+                position: absolute;
+                background-color: rgb(188, 188, 221);
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                margin-top: -20px;
+                margin-left: 180px;
+                width: 150px;
+                height: 50px;
+                transform: rotate(-5deg);
+            }
+
+            .Text {
+                margin: 50px;
+            }
+
+
+
+        }
+
+        .DetailNextButton {
+            margin-top: 400px;
+
+            button {
+                width: 50px;
+                height: 50px;
             }
         }
     }
