@@ -10,6 +10,21 @@ body {
   margin-top: 100px;
   border-radius: 20px;
 }
+.navBarStyle button {
+  position: fixed;
+  left: 70%;
+  top: 15%;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+.navBarStyle div {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
 
 @media screen and (max-width: 500px) {
   .navBarStyle {

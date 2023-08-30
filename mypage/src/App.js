@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/navBar";
 import WelcomeDiv from "./components/welcomeDiv";
 import ProfileCard from "./components/ProfileCard";
-import SkillDiv from "./components/skillDiv";
 import DesignDiv from "./components/DesignDiv";
 
 
@@ -20,7 +19,7 @@ function App() {
         {/* path="/*" 意思是預設會顯示 */}
         <Routes>
           <Route path='/*' element={<WelcomeDiv />} />
-          <Route path="/profile" element={<React.Fragment><ProfileCard /></React.Fragment>} />
+          <Route path="/profile" element={<ProfileCard />} />
           <Route path="/design" element={<DesignDiv />} />
 
 

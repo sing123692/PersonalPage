@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap');
+
+
+
+
+
 .BackShape {
     display: flex;
     flex-direction: row;
 
     margin: 50px 300px; //上下 / 左右
-
-
 }
 
 
@@ -70,20 +74,26 @@
 }
 
 .AboutMe {
-    width: 800px;
-    margin-top: 50px;
-    margin-left: 100px;
+    width: 900px;
+    height: 500px;
+    margin-top: 20px;
+    margin-left: -50px;
     line-height: 2;
     font-weight: bolder;
     font-size: 16px;
+    background-color: white;
+    padding-left: 100px;
+    border-radius: 20px;
 
     h1 {
-        background-color: rgb(210, 233, 227);
-        width: 800px;
+        font-size: 48px;
+        font-family: 'Noto Sans TC', sans-serif;
+        width: 200px;
         height: 50px;
         margin-left: -200px; //背景那條藍色
-        padding-left: 120px; //文字和背景的差距 想把字移出來使用的
+        padding-left: 200px; //文字和背景的差距 想把字移出來使用的
         justify-content: center;
+        background-color: rgb(177, 237, 255);
     }
 }
 
@@ -118,21 +128,24 @@
 }
 
 .SkillDiv {
-    display: flex;
-    flex-direction: column;
-    width: 800px;
-    margin: 100px 20px;
-    margin-top: 50px;
-    margin-left: 100px;
+    width: 900px;
+    height: 500px;
+    margin-top: 20px;
+    margin-left: -50px;
+    line-height: 2;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 16px;
+    background-color: white;
+    padding-left: 100px;
+    border-radius: 20px;
 
     h1 {
-        background-color: rgb(210, 233, 227);
+
         width: 800px;
         height: 50px;
         margin-left: -200px; //背景那條藍色
-        padding-left: 120px; //文字和背景的差距 想把字移出來使用的
+        padding-left: 200px; //文字和背景的差距 想把字移出來使用的
+        justify-content: center;
     }
 
 

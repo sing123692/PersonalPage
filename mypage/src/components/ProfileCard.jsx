@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import "./css/ProfileCardDivStyle.css";
 import { motion } from 'framer-motion';
 
-const ProfileCard = () => {
+const ProfileCard = (props) => {
 
     const [ShowAboutMe, setShowAboutMe] = useState(true);
     const [ShowSkill, setShowSkill] = useState(false);
-
+    console.log(props);
 
 
     const toggleAboutMe = () => {
@@ -15,8 +15,10 @@ const ProfileCard = () => {
 
     };
 
+
+
     return (
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+        <motion.div>
             <div className='BackShape'>
                 <div className='ProfileCardDiv'>
 
@@ -47,18 +49,19 @@ const ProfileCard = () => {
 
                 {ShowAboutMe && (
                     < div className='AboutMe'>
-                        <h1>Self Introduction</h1>
+                        <h1>關於我</h1>
 
                         <p>
-                            在資策會就讀時期，學習到了前端相關的HTML、CSS、JavaScript等語言，<br />
-                            CSS的部分學習使用了SCSS，JavaScript則是有延伸學習到jQuery函式庫，<br />
-                            可以使用ajax以及套用一些已完成套件，也略懂一些後端的程式語言，<br />
-                            目前使用的是MySQL與express套件去將資料庫與本地伺服器連接。<br />
+                            你好！我是曾郁庭，近期剛從資策會畢業，正在尋找網頁前端相關的工作。<br />
+                            我會使用的語言有基本的HTML、CSS、JavaScript，<br />
+                            框架則是使用了React目前正在學習Vue，在此前也有使用過jQuery含式庫，<br />
+                            CSS的部分學習使用了SCSS正在學習TailWindCss<br />
+                            API串接的時候使用AJAX但後來改使用框架的原因改使用了Axios<br />
+                            也會使用Boostrap套用現有的套版。<br />
+                            在學期間，略懂一些後端的程式語言，<br />
+                            目前使用的是MySQL與Express套件去將資料庫與本地伺服器連接。<br />
 
-                            在畢業專題中，負責了串接政府OpenData與使用Figma設計網頁，<br />
-                            以及製作了簡易的登入註冊系統，小組使用了React，<br />
-                            因此除了使用ajax，也學習到了使用axios去串接後端或是公開的API，<br />
-                            為了能更加應用自如此框架，也持續在更加了解React框架，希望未來完成學習React能了解Vue框架以及其他相關語言。<br />
+                            <br />
                         </p>
                     </div>
                 )}
