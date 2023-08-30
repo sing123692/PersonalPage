@@ -36,7 +36,7 @@ const DesignDiv = () => {
         {
             title: '大專題_首頁設計',
             content: '大專題的首頁UIUX部分，使用Figma完成',
-            detail: '',
+            detail: '大專題的首頁UIUX部分，使用Figma完成，為了讓組員更方便製作而修修改改成現今此圖，關於首圖文字太黑的部分，是由於後面成品放的是影片，這裡則是暫時放了圖片的緣故',
             image: {
                 default: 'img02.png'
             },

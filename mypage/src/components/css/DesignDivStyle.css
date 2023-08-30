@@ -12,7 +12,6 @@
 
 .DesignStyle {
   transition: 0.5s;
-  will-change: transform;
   background-color: white;
   width: 350px;
   height: 500px;
@@ -72,7 +71,7 @@
      object-position: top;
 }
 .DesignStyle .Text {
-  margin-top: -30px;
+  margin: -30px 20px;
 }
 
 .mycontainer {
@@ -145,6 +144,7 @@
 }
 .DesignDetailOverlay .DesignDetail .DetailText .Text {
   margin: 50px;
+  line-height: 2;
 }
 .DesignDetailOverlay .DesignDetail .DetailNextButton {
   margin-top: 400px;
