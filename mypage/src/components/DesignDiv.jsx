@@ -83,7 +83,17 @@ const DesignDiv = () => {
                 type01: 'UI/UX',
             }
         },
-
+        {
+            title: '早餐店頁面概念',
+            content: 'Figma製作早餐店頁面',
+            detail: 'Figma製作的早餐店頁面，設計了RWD樣式(新分頁開啟可以看大圖)，目前實作的想法是把描邊的食物用svg輸出讓他有動態效果，點選關鍵字(ABOUT、NEWS)會在本頁跳出新視窗，MENU則是導覽到MENU頁面。',
+            image: {
+                default: 'img07.png',
+            },
+            type: {
+                type01: 'UI/UX',
+            },
+        },
 
 
 
