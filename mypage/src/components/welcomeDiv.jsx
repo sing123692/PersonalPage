@@ -1,6 +1,7 @@
 import React from 'react';
 import "./css/WelcomeDivStyle.css";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 const WelcomeDiv = () => {
 
     const motionAnimation = {
@@ -15,14 +16,24 @@ const WelcomeDiv = () => {
     return (
         <motion.div
             className='WhiteDiv'
-            {...motionAnimation.FadeIn}
-        >
-            <h1>
-                Welcome<br />
-                To<br />
-                My<br />
-                Page<br />
-            </h1>
+            {...motionAnimation.FadeIn}>
+
+            <div className='WelcomeText'>
+                <h1>
+                    Welcome to my page!
+                </h1>
+                <img src={require("../images/WelcomPic.png")} alt="" />
+
+            </div>
+            <div className='WelcomeBtn'>
+                <Link to="/design">
+                    <motion.button whileHover={{ x: 50 }}
+                    >View my Design</motion.button>
+                </Link>
+                <Link to="/profile">
+                    <motion.button whileHover={{ x: 50 }}>View my Profile</motion.button>
+                </Link>
+            </div>
         </motion.div>
     );
 
