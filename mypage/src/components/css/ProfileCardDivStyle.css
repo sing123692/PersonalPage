@@ -1,8 +1,9 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap");
 .BackShape {
   display: flex;
   flex-direction: row;
-  margin: 50px 300px;
+  margin: 50px 200px;
 }
 
 .ProfileCardDiv {
@@ -28,7 +29,7 @@
   margin-top: 50px;
 }
 .ProfileCardDiv .Profile .avatar img {
-  background-color: lightblue;
+  background-color: rgb(233, 230, 211);
   -webkit-clip-path: circle(50% at 50% 50%);
           clip-path: circle(50% at 50% 50%);
   width: 300px;
@@ -50,19 +51,25 @@
   line-height: 2;
   font-weight: bolder;
   font-size: 16px;
-  background-color: white;
   padding-left: 100px;
   border-radius: 20px;
 }
-.AboutMe h1 {
-  font-size: 48px;
-  font-family: "Noto Sans TC", sans-serif;
-  width: 200px;
-  height: 50px;
-  margin-left: -200px;
-  padding-left: 200px;
-  justify-content: center;
-  background-color: rgb(177, 237, 255);
+.AboutMe .AboutMeText .AboutTitle {
+  background-color: white;
+  border-radius: 50px;
+  width: 300px;
+  margin-left: -50px;
+}
+.AboutMe .AboutMeText .AboutTitle h1 {
+  text-align: center;
+  /* 文本水平居中 */
+  margin: auto;
+  /* 垂直居中 */
+}
+.AboutMe .AboutMeText p {
+  background-color: white;
+  padding: 50px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .buttonDiv {
@@ -91,21 +98,39 @@
 }
 
 .SkillDiv {
-  width: 900px;
+  width: 1000px;
   height: 500px;
   margin-top: 20px;
-  margin-left: -50px;
+  margin-left: -100px;
   line-height: 2;
   font-weight: bolder;
   font-size: 16px;
-  background-color: white;
   padding-left: 100px;
   border-radius: 20px;
+  display: flex;
+  flex-direction: row;
 }
-.SkillDiv h1 {
-  width: 800px;
-  height: 50px;
-  margin-left: -200px;
-  padding-left: 200px;
-  justify-content: center;
+.SkillDiv .SkillCard {
+  width: 700px;
+  height: 400px;
+  margin: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: 1s;
+}
+.SkillDiv .SkillCard:hover {
+  margin-top: -20px;
+}
+.SkillDiv .SkillCard:nth-child(1) {
+  border-bottom: 10px solid rgb(142, 187, 165);
+}
+.SkillDiv .SkillCard:nth-child(1) h1 {
+  border-bottom: 5px solid rgb(142, 187, 165);
+}
+.SkillDiv .SkillCard:nth-child(2) {
+  border-bottom: 10px solid rgb(180, 233, 178);
+}
+.SkillDiv .SkillCard:nth-child(3) {
+  border-bottom: 10px solid rgb(183, 204, 183);
 }/*# sourceMappingURL=ProfileCardDivStyle.css.map */
